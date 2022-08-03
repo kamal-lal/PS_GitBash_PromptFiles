@@ -3,9 +3,9 @@
 ## PowerShell Prompt
 * Open Powershell
 * notepad $PROFILE
-* Copy Paste the function 'prompt'
+* Copy Paste the below function 'prompt'
 
-```
+```powershell
 function prompt
 {
     Write-Host ""
@@ -23,13 +23,15 @@ function prompt
 }
 ```
 
+---
+
 ## GitBash Prompt
 * Open Git Bash
 * mkdir ~/.config
 * mkdir ~/.config/git
 * touch git-prompt.sh
 * notepad ~/.config/git/git-prompt.sh
-* Copy Paste the content for updating $PS1
+* Copy Paste the below content for $PS1
 
 ```bash
 PS1='\[\033]0;GitBash: $PWD\007\]' # set window title
