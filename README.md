@@ -48,7 +48,8 @@ PS1="$PS1"'\[\033[37m\]'	# change to light gray
 PS1="$PS1"'] in ['		# ] in [
 PS1="$PS1"'\[\033[93m\]'	# change to light yellow
 PS1="$PS1"'\w'			# current working directory
-PS1="$PS1"'\[\033[37m\]]'
+PS1="$PS1"'\[\033[37m\]'	# change to light gray
+PS1="$PS1"']'			# ]
 if test -z "$WINELOADERNOEXEC"
 then
 	GIT_EXEC_PATH="$(git --exec-path 2>/dev/null)"
