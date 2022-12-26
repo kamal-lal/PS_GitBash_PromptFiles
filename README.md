@@ -3,6 +3,7 @@
 ## PowerShell Prompt
 * Open Powershell
 * notepad $PROFILE
+* NB: If $PROFILE path does not exist, run ```New-Item -ItemType File -Path $PROFILE -Force``` from PowerShell
 * Copy Paste the below function 'prompt'
 
 ```powershell
