@@ -26,7 +26,7 @@ function prompt
 
 ---
 
-## GitBash Prompt
+## GitBash Prompt (Windows)
 * Open Git Bash
 * mkdir ~/.config
 * mkdir ~/.config/git
@@ -68,4 +68,45 @@ fi
 PS1="$PS1"'\[\033[0m\]'		# change color
 PS1="$PS1"'\n'			# new line
 PS1="$PS1"'$ '  		# $
+```
+
+---
+
+## Bash Prompt (Linux)
+* Open ~/.bashrc
+* Copy the following to end of file
+
+```bash
+# Color codes
+cRESET="\[\e[m\]"
+cBLACK="\[\e[30m\]"
+cRED="\[\e[31m\]"
+cGREEN="\[\e[32m\]"
+cYELLOW="\[\e[33m\]"
+cBLUE="\[\e[34m\]"
+cPINK="\[\e[35m\]"
+cCYAN="\[\e[36m\]"
+cWHITE="\[\e[37m\]"
+
+# Elements Naming
+eNEWLINE="\n"
+eUSERNAME="\u"
+eFOLDERPATH="\w"
+eFOLDERNAME="\W"
+
+# Build PS1
+PS1=$eNEWLINE
+PS1+="["
+PS1+=$cGREEN
+PS1+=$eUSERNAME
+PS1+=$cRESET
+PS1+="] in ["
+PS1+=$cYELLOW
+PS1+=$eFOLDERPATH
+PS1+=$cRESET
+PS1+="]"
+PS1+=$eNEWLINE
+PS1+="$ "
+
+export PS1
 ```
