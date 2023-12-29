@@ -2,7 +2,7 @@
 
 ## PowerShell Prompt
 * Open Powershell
-* Run ```Set-ExecutionPolicy Bypass -Scope Process -Force```
+* Run ```Set-ExecutionPolicy Unrestricted -Scope CurrentUser -Force```
 * notepad $PROFILE
 * NB: If $PROFILE path does not exist, run ```New-Item -ItemType File -Path $PROFILE -Force``` from PowerShell
 * Copy Paste the below function 'prompt'
