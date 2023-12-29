@@ -2,6 +2,7 @@
 
 ## PowerShell Prompt
 * Open Powershell
+* Run ```Set-ExecutionPolicy Bypass -Scope Process -Force```
 * notepad $PROFILE
 * NB: If $PROFILE path does not exist, run ```New-Item -ItemType File -Path $PROFILE -Force``` from PowerShell
 * Copy Paste the below function 'prompt'
@@ -30,7 +31,7 @@ function prompt
 * Open Git Bash
 * mkdir ~/.config
 * mkdir ~/.config/git
-* touch git-prompt.sh
+* touch ~/.config/git/git-prompt.sh
 * notepad ~/.config/git/git-prompt.sh
 * Copy Paste the below content for $PS1
 
